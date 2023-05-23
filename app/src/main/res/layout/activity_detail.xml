@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondaire"
+    tools:context=".controller.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Article 1"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaire"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Écrit par "
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/activity_detail_auteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baba Guindo"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/activity_detail_datePublication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29 Fevrier 2023"
+                android:layout_marginLeft="130dp"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/primaire"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/activity_detail_contenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam veniam sint doloribus delectus fuga impedit laboriosam corrupti eaque. Exercitationem, quia. Soluta reprehenderit eaque odio animi inventore accusamus ab quaerat ducimus.
+            " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_detail_imgRetour"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/flechederetour" />
+
+    </RelativeLayout>
+
+</FrameLayout>

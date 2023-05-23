@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaire"
+    tools:context=".controller.AjoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_ajout_textSimpleBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SunuBlog"
+            android:textColor="@color/primaire"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un article"
+            android:textColor="@color/primaire"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"/>
+
+                <EditText
+                    android:id="@+id/activity_ajout_editTextAjoutTitre"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="180dp"
+                    android:hint="Titre"
+                    android:textColor="@color/primaire"
+                    android:textSize="40sp"
+                    android:padding="10dp"
+                    android:background="@drawable/input1" />
+
+                        <EditText
+                            android:id="@+id/activity_ajout_editTextAjoutContenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="285dp"
+                            android:textSize="40sp"
+                            android:hint="Contenu"
+                            android:textColor="@color/primaire"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/input1"/>
+
+                        <Button
+                            android:id="@+id/activity_ajout_btnAjouter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AJOUTER"
+                            android:textSize="40sp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="610dp"
+                            android:backgroundTint="@color/primaire" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/activity_ajout_annuler"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="26dp"
+                android:layout_marginBottom="26dp"
+                android:src="@drawable/boutonannuler" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
